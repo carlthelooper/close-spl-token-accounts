@@ -1,0 +1,26 @@
+{
+  "name": "close-spl-token-accounts",
+  "version": "1.0.0",
+  "description": "Tool that attempts to close all SPL token accounts that have a valid state and a zero balance.",
+  "main": "index.js",
+  "scripts": {
+    "start": "dotenv ts-node src/index.ts",
+    "build": "tsc"
+  },
+  "author": "CarlTheLooper",
+  "license": "MIT",
+  "devDependencies": {
+    "dotenv-cli": "^8.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@ledgerhq/hw-app-solana": "^7.4.0",
+    "@ledgerhq/hw-transport-node-hid": "^6.29.5",
+    "@solana/spl-token": "^0.4.13",
+    "@solana/web3.js": "^1.98.2",
+    "bs58": "^6.0.0",
+    "chalk": "^5.2.0",
+    "inquirer": "^12.6.0"
+  }
+}
